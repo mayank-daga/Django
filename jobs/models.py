@@ -8,3 +8,5 @@ class Job(models.Model):
     summary = models.CharField(max_length=255)
 
 
+    def __str__(self):
+        return self.summary
